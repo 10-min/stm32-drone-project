@@ -29,3 +29,12 @@
 | Programming Language | C |
 | Communication Protocols | I2C(IMU), UART(HC-06, Debugging) | 
 | Drone Control Algorithms | PID Control |
+
+## Features
+- IMU와 PID Control을 융합한 비행 안정화
+- HC-06 Bluetooth Module을 이용한 스마트폰 원격 조종
+- 일정 시간 신호 부재시 모터 정지
+
+## Implements
+
+### Hardware Setting
