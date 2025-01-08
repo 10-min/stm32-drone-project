@@ -10,4 +10,22 @@
 - 드론 조립 및 테스트를 통해 실습 경험 획득.
 
 ## Hardware
-- STM32: STM32F103RBT6 / 72 MHz, up to 1 Mbyte of Flash with motor control, USB and CAN
+- MCU: STM32F103RBT6 / 72 MHz, up to 1 Mbyte of Flash with motor control, USB and CAN
+- Frame: ABS 플라스틱 재질, F330 4-Axis Frame
+- Motor: BLDC, A2212 1400KV
+- Propeller: 8045 plastic propeller for Quardcopter
+- ESC: Hobbywing skywalker 20A
+- Battery: 3S, 1800mAh Lipo battery
+- Sensor
+  - IMU: MPU6050
+  - Wireless Communication: HC-06 (Bluetooth)
+
+## Tool and Framework
+
+|     |     |
+| --- | --- |
+| IDE | STM32CubeIDE |
+| Firmware Development | STM32 HAL Library |
+| Programming Language | C |
+| Communication Protocols | I2C(IMU), UART(HC-06, Debugging) | 
+| Drone Control Algorithms | PID Control |
