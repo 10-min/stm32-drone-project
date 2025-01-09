@@ -32,9 +32,15 @@
 
 ## Features
 - IMU와 PID Control을 융합한 비행 안정화
+- Kalman filter를 통한 비행 안정화
 - HC-06 Bluetooth Module을 이용한 스마트폰 원격 조종
 - 일정 시간 신호 부재시 모터 정지
 
 ## Implements
+
+### Hardware Setting
+- 프레임에 STM32 Board를 부착.
+- HC-06 및 전원 회로는 Mini Bread Board를 부착하여 연결.
+- 
 
 ### Hardware Setting
