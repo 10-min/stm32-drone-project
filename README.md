@@ -39,8 +39,12 @@
 ## Implements
 
 ### Hardware Setting
-- 프레임에 STM32 Board를 부착.
-- HC-06 및 전원 회로는 Mini Bread Board를 부착하여 연결.
-- 
+- STM32 Board는 프레임 상단에 양면 테이프로 고정
+- HC-06 및 전원 회로는 Mini Bread Board를 부착하여 연결
+- ESC와 Motor는 납땜으로 직접 연결
+- 배터리 전원부는 XT-60 connector로 부착
+- MPU6050은 진동 감쇠를 위해 프레임 하단부에 고무 패드 부착후 댐퍼 추가하여 연결
+- 프로펠러는 좌측정면, 우측후면은 CW, 우측정면, 좌측후면은 CCW 방향으로 설정
 
-### Hardware Setting
+### Software Implements
+- ESC Calibration
