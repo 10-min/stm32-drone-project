@@ -118,6 +118,12 @@
 
 [![Test1](https://github.com/user-attachments/assets/9ce4805e-5410-4fc6-8129-97b6fcc0fa93)](https://www.youtube.com/watch?v=l1rKK0Qbktg)
 
-- Frame 손상 이후 랜딩 기어를 추가하여 다시 테스트
+  - 높은 곳에서 컨트롤이 미숙해 낙하하여 Frame 다리가 손상
+
+- Frame 손상 이후 랜딩 기어를 추가하여 다시 테스트 (Low pass filter + DLPF)
 
 [![Test2](https://github.com/user-attachments/assets/cefb9f4e-6dd9-4ad4-b9e6-57b4cffc879e)](https://www.youtube.com/watch?v=jNpG6de5bn8)
+
+  - DLPF를 적용해도 조작 없이 센서값이 튀는 걸 볼 수 있음
+  - 이후 MPU-6050을 하단부에 고정하고 Low pass filter에서 Kalman filter로 바꿔 적용함
+  - DLPF를 한 단계 낮춰도 안정성이 강화되었으며, 그에 따라 반응 속도도 빨라질 수 있었음
