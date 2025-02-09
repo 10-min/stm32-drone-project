@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/btnBluetoothOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Bluetooth On"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnBluetoothOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Off"
+        app:layout_constraintStart_toEndOf="@+id/btnBluetoothOn"
+        app:layout_constraintTop_toTopOf="@+id/btnBluetoothOn"/>
+
+    <Button
+        android:id="@+id/btnBluetoothConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        app:layout_constraintStart_toEndOf="@+id/btnBluetoothOff"
+        app:layout_constraintTop_toTopOf="@+id/btnBluetoothOff" />
+
+    <TextView
+        android:id="@+id/bluetoothStatus"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="status OFF"
+        app:layout_constraintStart_toStartOf="@+id/btnBluetoothOn"
+        app:layout_constraintTop_toBottomOf="@+id/btnBluetoothOn" />
+    <EditText
+        android:id="@+id/sendData"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/btnBluetoothOn"
+        app:layout_constraintTop_toBottomOf="@+id/bluetoothStatus"/>
+    <Button
+        android:id="@+id/btnSendData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send data"
+        app:layout_constraintStart_toEndOf="@+id/sendData"
+        app:layout_constraintBottom_toBottomOf="@+id/sendData"
+        app:layout_constraintLeft_toRightOf="@+id/sendData"/>
+    <Button
+        android:id="@+id/btnController"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Controller"
+        app:layout_constraintStart_toStartOf="@+id/btnBluetoothConnect"
+        app:layout_constraintTop_toTopOf="@+id/btnSendData"/>
+    <TextView
+        android:id="@+id/receiveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receive"
+        app:layout_constraintStart_toStartOf="@+id/btnBluetoothOn"
+        app:layout_constraintTop_toBottomOf="@+id/sendData" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

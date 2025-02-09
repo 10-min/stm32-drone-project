@@ -1,0 +1,7 @@
+../Lib/Src/mokhw_MPU6050.c:5:6:WHO_AM_I	2
+../Lib/Src/mokhw_MPU6050.c:20:6:wake_up	1
+../Lib/Src/mokhw_MPU6050.c:35:6:set_sample_rate	1
+../Lib/Src/mokhw_MPU6050.c:53:6:set_sensitivity	9
+../Lib/Src/mokhw_MPU6050.c:116:6:set_DLPF	2
+../Lib/Src/mokhw_MPU6050.c:132:6:read_gyro	3
+../Lib/Src/mokhw_MPU6050.c:165:6:read_accel	3
