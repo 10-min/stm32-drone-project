@@ -115,4 +115,9 @@
  
 ## Test
 - 첫 번째 테스트
+
+[![Test1](https://github.com/user-attachments/assets/9ce4805e-5410-4fc6-8129-97b6fcc0fa93)](https://www.youtube.com/watch?v=l1rKK0Qbktg)
+
 - Frame 손상 이후 랜딩 기어를 추가하여 다시 테스트
+
+[![Test2](https://github.com/user-attachments/assets/cefb9f4e-6dd9-4ad4-b9e6-57b4cffc879e)](https://www.youtube.com/watch?v=jNpG6de5bn8)
