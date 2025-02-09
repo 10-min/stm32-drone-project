@@ -85,39 +85,4 @@
   
     ![Image](https://github.com/user-attachments/assets/88d10396-d4c6-42d1-a53d-7c047e3798a7)
 
-  - Android Studio 사용
-  - Controller는 Canvas를 사용해 구현하였으며, 2개의 조이스틱을 구현
-  - 좌측은 Pitch, Roll, 우측은 Throttle, Yaw 제어
-  
-- **ESC Calibration**
-  - STM32 PWM 제어 400Hz 세팅
-  - 1-2ms 신호를 최소에서 최대값으로 감지
-  - 드론에 사용된 ESC는 다음과 같은 Calibration 과정이 필요
-    > 1. Throttle 최대인 상태 유지
-    > 2. 전원을 키고 2초간 대기
-    > 3. Beep-Beep tone이 방출됨
-    > 4. 다시 Throttle을 최소로 내리면 Beep tone이 여러번 울림
-    > 5. Beep tone이 길게 울리면 최소-최대 범위가 확인됨
-
-- **MPU-6050**
-  - Stm32 SPI 통신을 위해 Open Source Library 사용 [Git](https://github.com/mokhwasomssi/stm32_hal_mpu6050.git)
-  - DLPF(Digital Low Pass Filter)를 사용하기 위해 set_DLPF 함수 추가
-
-- **PID Control**
-  - 안정화를 위해 P-PID Dual PID 제어를 사용
-  - P는 Target angle과 current angle과의 diff
-  - Dual P는 P * stabilize_kp와 각속도와의 차이
- 
-- **Filter**
-  - 개발 초기 Low pass filter와 DLPF를 사용했으며, DLPF 정도를 높여서 안정성을 높였음
-  - DLPF 사용 시 안정성은 높아졌지만, 반응 속도가 느려 다른 방안을 탐구함
-  - 이후 Kalman filter를 적용하여 안정화를 한 층 더 높일 수 있었음
- 
-## Test
-- 첫 번째 테스트
-
-[![Test1](https://github.com/user-attachments/assets/9ce4805e-5410-4fc6-8129-97b6fcc0fa93)](https://www.youtube.com/watch?v=l1rKK0Qbktg)
-
-- Frame 손상 이후 랜딩 기어를 추가하여 다시 테스트
-
-[![Test2](https://github.com/user-attachments/assets/cefb9f4e-6dd9-4ad4-b9e6-57b4cffc879e)](https://www.youtube.com/watch?v=jNpG6de5bn8)
+  - Android Studio 짐
