@@ -31,10 +31,10 @@
 | Drone Control Algorithms | PID Control |
 
 ## Features
-- IMU와 PID Control을 융합한 비행 안정화
-- Kalman filter를 통한 비행 안정화
-- HC-06 Bluetooth Module을 이용한 스마트폰 원격 조종
-- 일정 시간 신호 부재시 모터 정지
+- IMU 센서와 PID 제어의 융합으로 정밀한 비행 안정화 구현
+- 칼만 필터 적용으로 센서 노이즈를 완벽 제거하여 제어 정밀도 극대화
+- HC-06 블루투스 모듈 기반 스마트폰 원격 조종 기능 제공
+- 일정 시간 신호 부재 시 모터 자동 정지로 안전 비상 대응 시스템 탑재
 
 ## Implements
 
