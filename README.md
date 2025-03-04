@@ -114,13 +114,14 @@
   - 이후 Kalman filter를 적용하여 안정화를 한 층 더 높일 수 있었음
  
 ## Test
-- 첫 번째 테스트
+- 테스트1
 
 [![Test1](https://github.com/user-attachments/assets/9ce4805e-5410-4fc6-8129-97b6fcc0fa93)](https://www.youtube.com/watch?v=l1rKK0Qbktg)
 
   - 높은 곳에서 컨트롤이 미숙해 낙하하여 Frame 다리가 손상
 
-- Frame 손상 이후 랜딩 기어를 추가하여 다시 테스트 (Low pass filter + DLPF)
+- 테스트2
+  - Frame 손상 이후 랜딩 기어를 추가하여 다시 테스트 (Low pass filter + DLPF)
 
 [![Test2](https://github.com/user-attachments/assets/cefb9f4e-6dd9-4ad4-b9e6-57b4cffc879e)](https://www.youtube.com/watch?v=jNpG6de5bn8)
 
